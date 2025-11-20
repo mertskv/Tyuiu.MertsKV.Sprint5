@@ -7,9 +7,9 @@ namespace Tyuiu.MertsKV.Sprint5.Task1.V19.Test
     public sealed class DataServiseTest
     {
         [TestMethod]
-        public void ValidSaveToFileTextData()
+        public void CheckedExistsFile()
         {
-            string path = @"C:\Users\kmert\source\repos\Tyuiu.MertsKV.Sprint5\Tyuiu.MertsKV.Sprint5.Task1.V19\bin\Debug\OutPutFileTask1.txt";
+            string path = @"C:\Users\kmert\AppData\Local\Temp\OutPutFileTask1";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
