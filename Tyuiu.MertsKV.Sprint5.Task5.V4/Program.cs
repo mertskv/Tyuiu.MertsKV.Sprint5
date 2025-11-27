@@ -1,0 +1,30 @@
+﻿using System.IO;
+using Tyuiu.MertsKV.Sprint5.Task5.V4.Lib;
+namespace Tyuiu.MertsKV.Sprint5.Task5.V4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DataServise ds = new DataServise();
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                                       *");
+            Console.WriteLine("***************************************************************************");
+
+            string path = @"C:\DataSprint5\InPutDataFileTask5V4.txt";
+
+            Console.WriteLine("Данные находятся в файле " + path);
+
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+
+            double res = ds.LoadFromDataFile(path);
+
+            Console.WriteLine("Произведение элементов файла = " + res);
+            Console.ReadKey();
+        }
+    }
+}
